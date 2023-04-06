@@ -2,7 +2,8 @@
   <div id="app">
     <nav>
       <router-link to="/">Home</router-link> |
-      <router-link to="/route-info" event="mouseover" exact-active-class="test">Route Info</router-link>
+      <router-link to="/route-info" event="mouseover" exact-active-class="test">Route Info</router-link> |
+      <router-link to="/book">Book List</router-link> |
     </nav>
     <router-view/>
   </div>
