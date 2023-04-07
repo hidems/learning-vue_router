@@ -39,8 +39,15 @@ export default {
   },
   methods: {
     showBookDetail(id) {
-      this.bookIndex = id -1
-      console.log(this.bookIndex)
+      this.bookIndex = id - 1
+      this.$router.push({
+        name: 'BookDetail',
+        params: {
+          id: this.books[this.bookIndex].id,
+          title: this.books[this.bookIndex].title,
+          content: this.books[this.bookIndex].content,
+        }
+      })
     },
   },
 }
