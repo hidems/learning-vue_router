@@ -4,6 +4,9 @@ import HomeView from '../views/HomeView.vue'
 import BookList from '../views/BookList.vue'
 import BookDetail from '../views/BookDetail.vue'
 import ItemList from '../views/ItemList.vue'
+import NotFound from '../views/NotFound.vue'
+import EmitPractise from '../views/EmitPractise.vue'
+import EmitCountUp from '../views/EmitCountUp.vue'
 
 Vue.use(VueRouter)
 
@@ -40,6 +43,21 @@ const routes = [
     path: '/item/:id',
     name: 'ItemList',
     component: ItemList
+  },
+  {
+    path: '/emit',
+    name: 'EmitPractise',
+    component: EmitPractise
+  },
+  {
+    path: '/emit/countup',
+    name: 'EmitCountUp',
+    component: EmitCountUp
+  },
+  {
+    path: '*',
+    name: 'NotFound',
+    component: NotFound
   }
 ]
 
