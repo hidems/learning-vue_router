@@ -29,4 +29,10 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
   - Emit
   - Props: method call back props
   - https://techblog.roxx.co.jp/entry/2020/07/09/092955
- 
+### Nested route
+- user/
+  - user/profile
+  - user/post
+### Multi Select
+  - https://vue-multiselect.js.org/
+  
