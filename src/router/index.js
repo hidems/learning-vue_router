@@ -8,8 +8,8 @@ import NotFound from '../views/NotFound.vue'
 import EmitPractise from '../views/EmitPractise.vue'
 import EmitCountUp from '../views/EmitCountUp.vue'
 import UserView from '../views/UserView.vue'
-import UserProfile from '@/components/UserProfile.vue'
-import UserPost from '@/components/UserPost.vue'
+import UserProfile from '@/components/user/UserProfile.vue'
+import UserPost from '@/components/user/UserPost.vue'
 
 Vue.use(VueRouter)
 
