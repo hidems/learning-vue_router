@@ -5,9 +5,12 @@
       <router-link to="/route-info" event="mouseover" exact-active-class="test">Route Info</router-link> |
       <router-link to="/book">Book List</router-link> |
       <router-link to="/item/1">Item List</router-link> |
-      <router-link to="/emit">Emit Practice</router-link> 
+      <router-link to="/emit">Emit Practice</router-link> |
+      <router-link to="/user/profile">User</router-link>
     </nav>
-    <router-view/>
+    <div class="border-blue">
+      <router-view/>
+    </div>
   </div>
 </template>
 
@@ -38,5 +41,8 @@ nav a.router-link-exact-active {
 }
 nav a.test {
   color: lightblue;
+}
+.border-blue {
+  border: 2px solid blue;
 }
 </style>

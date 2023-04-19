@@ -7,6 +7,9 @@ import ItemList from '../views/ItemList.vue'
 import NotFound from '../views/NotFound.vue'
 import EmitPractise from '../views/EmitPractise.vue'
 import EmitCountUp from '../views/EmitCountUp.vue'
+import UserView from '../views/UserView.vue'
+import UserProfile from '@/components/user/UserProfile.vue'
+import UserPost from '@/components/user/UserPost.vue'
 
 Vue.use(VueRouter)
 
@@ -53,6 +56,20 @@ const routes = [
     path: '/emit/countup',
     name: 'EmitCountUp',
     component: EmitCountUp
+  },
+  {
+    path: '/user',
+    component: UserView,
+    children: [
+      {
+        path: 'profile',
+        component: UserProfile
+      },
+      {
+        path: 'post',
+        component: UserPost
+      }
+    ]
   },
   {
     path: '*',
