@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import HomeView from '../views/HomeView.vue'
+import HomeSub from '@/components/HomeSub.vue'
 import BookList from '../views/BookList.vue'
 import BookDetail from '../views/BookDetail.vue'
 import ItemList from '../views/ItemList.vue'
@@ -17,7 +18,10 @@ const routes = [
   {
     path: '/',
     name: 'home',
-    component: HomeView
+    components: {
+      default: HomeView,
+      sub: HomeSub
+    }
   },
   {
     path: '/route-info',
