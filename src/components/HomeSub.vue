@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>HomeSub Component</h1>
+    <h1 class="border__red">HomeSub Component</h1>
   </div>
 </template>
 
@@ -10,6 +10,10 @@ export default {
 }
 </script>
 
-<style>
-
+<style scpoed lang="scss">
+.border {
+  &__red {
+    border: 1px solid red;
+  }
+}
 </style>

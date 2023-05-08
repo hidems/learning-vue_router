@@ -38,6 +38,8 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
     - Fix directory structure
 ### Multi Select
   - https://vue-multiselect.js.org/
+### Transition by SASS
+- npm install --save-dev sass-loader node-sass
 
 ### Task
 - 各ページの特徴書出し
