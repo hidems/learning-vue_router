@@ -8,8 +8,10 @@
       <router-link to="/emit">Emit Practice</router-link> |
       <router-link to="/user/profile">User</router-link>
     </nav>
-    <div class="border-blue">
-      <router-view/>
+    <div class="border-blue">\
+      <transition name="fade" mode="out-in">
+        <router-view/>
+      </transition>
     </div>
       <router-view name="sub"/>
   </div>
@@ -45,5 +47,31 @@ nav a.test {
 }
 .border-blue {
   border: 2px solid blue;
+}
+</style>
+
+<style lang="scss">
+.fade {
+  &-enter {
+    transform: translate(-100px, 0);
+    opacity: 0;
+    &-to {
+      opacity: 1;
+    }
+    &-active {
+      transition: all 1s 0s ease;
+    }
+  }
+  &-leave {
+    transform: translate(0, 0);
+    opacity: 1;
+    &-to {
+      transform: translate(100px, 0);
+      opacity: 0;
+    }
+    &-active{
+      transition: all .5s 0s ease;
+    }
+  }
 }
 </style>
