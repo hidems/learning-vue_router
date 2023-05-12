@@ -40,9 +40,12 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
   - https://vue-multiselect.js.org/
 ### Transition by SASS
 - npm install --save-dev sass-loader node-sass
+### Navigation Guards
+- Global Before Guards
+- https://router.vuejs.org/guide/advanced/navigation-guards.html
+
 
 ### Task
 - 各ページの特徴書出し
 - 各ページのディレクトリ化
-- SASSの導入
   
