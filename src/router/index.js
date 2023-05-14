@@ -26,10 +26,15 @@ const routes = [
   {
     path: '/route-info',
     name: 'route-info',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "RouteInfo" */ '../views/RouteInfo.vue')
+    component: () => import(/* webpackChunkName: "RouteInfo" */ '../views/RouteInfo.vue'),
+    beforeEnter: (to, from, next) => {
+      const answer = window.confirm('Do you really want to leave?')
+      if (answer) {
+        next()
+      } else {
+        next(false)
+      }
+    }
   },
   {
     path: '/book',
