@@ -18,8 +18,15 @@ export default {
       console.log(to)
       console.log(from)
     }
+  },
+  beforeRouteLeave(to, from, next) {
+    const answer = window.confirm('Do you really want to leave?')
+    if (answer) {
+      next()
+    } else {
+      next(false)
+    }
   }
-
 }
 </script>
 
