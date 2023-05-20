@@ -43,7 +43,10 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 ### Navigation Guards
 - Global Before Guards
 - https://router.vuejs.org/guide/advanced/navigation-guards.html
-
+### Test Production
+- /dist/index.html
+- Test with web server for chrome extension
+- Add PublicPath on `vue.config.js` and `.htaccess` 
 
 ### Task
 - 各ページの特徴書出し
