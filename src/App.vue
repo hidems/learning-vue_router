@@ -8,7 +8,7 @@
       <router-link to="/emit">Emit Practice</router-link> |
       <router-link to="/user/profile">User</router-link>
     </nav>
-    <div class="border-blue">\
+    <div class="border-blue">
       <transition name="fade" mode="out-in">
         <router-view/>
       </transition>
