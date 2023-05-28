@@ -24,6 +24,9 @@ npm run lint
 See [Configuration Reference](https://cli.vuejs.org/config/).
 
 ## Feature
+### Home
+- Home View
+- Sub Component
 ### Emit Practise
 - Count up
   - Emit
