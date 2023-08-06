@@ -27,6 +27,7 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 ### Home
 - Home View
 - Sub Component
+- Display `process.env`
 ### Emit Practise
 - Count up
   - Emit
@@ -39,6 +40,8 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
   - commit
     - Create PR
     - Fix directory structure
+### Version
+- Vue 2
 ### Multi Select
   - https://vue-multiselect.js.org/
 ### Transition by SASS
@@ -50,8 +53,4 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 - /dist/index.html
 - Test with web server for chrome extension
 - Add PublicPath on `vue.config.js` and `.htaccess` 
-
-### Task
-- 各ページの特徴書出し
-- 各ページのディレクトリ化
   
