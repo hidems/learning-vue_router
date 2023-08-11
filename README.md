@@ -53,4 +53,10 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 - /dist/index.html
 - Test with web server for chrome extension
 - Add PublicPath on `vue.config.js` and `.htaccess` 
-  
+### xstate
+```
+npm install xstate xstate-vue2 @xstate/inspect
+```  
+- Usage with Vue2
+- https://xstate.js.org/docs/recipes/vue.html#using-usemachine-hook-from-xstate-vue2-plugin
+- https://www.npmjs.com/package/xstate-vue2
