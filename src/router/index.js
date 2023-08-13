@@ -11,6 +11,7 @@ import EmitCountUp from '../views/EmitCountUp.vue'
 import UserView from '../views/UserView.vue'
 import UserProfile from '@/components/user/UserProfile.vue'
 import UserPost from '@/components/user/UserPost.vue'
+import XstateView from '../views/XstateView.vue'
 
 Vue.use(VueRouter)
 
@@ -79,6 +80,11 @@ const routes = [
         component: UserPost
       }
     ]
+  },
+  {
+    path: '/Xstate',
+    name: 'Xstate',
+    component: XstateView
   },
   {
     path: '*',
