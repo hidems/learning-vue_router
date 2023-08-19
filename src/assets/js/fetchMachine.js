@@ -1,52 +1,6 @@
 import { createMachine, assign } from "xstate";
 import { fetchRestaurants } from "@/data/restaurants.js";
 
-// interface FetchContext {
-//   restaurants?: Restaurant[];
-//   error?: Error;
-// }
-
-// type InitialContext = FetchContext & {
-//   restaurants: undefined;
-//   error: undefined;
-// };
-
-// type ReadyContext = FetchContext & {
-//   restaurants: Restaurant[];
-//   error: undefined;
-// };
-
-// type LoadingContext = FetchContext & {
-//   restaurants: Restaurant[];
-//   error: undefined;
-// };
-
-// type SuccessContext = FetchContext & {
-//   restaurants: Restaurant[];
-//   error: undefined;
-// };
-
-// type FailureContext = FetchContext & {
-//   restaurants: undefined;
-//   error: Error
-// };
-
-// type InitialState = { value: 'initial'; context: InitialContext };
-// type ReadyState = { value: 'ready'; context: ReadyContext };
-// type LoadingState = { value: 'loading'; context: LoadingContext };
-// type SuccessState = { value: 'success'; context: SuccessContext };
-// type FailureState = { value: 'failure'; context: FailureContext };
-
-// type FetchState =
-//   | InitialState
-//   | ReadyState
-//   | LoadingState
-//   | SuccessState
-//   | FailureState;
-
-// type FetchEvent = { type: 'Fetch' } | { type: 'Retry' };
-
-// const fetchMachine = createMachine < FetchContext, FetchEvent, FetchState> ({
 const fetchMachine = createMachine({
   id: "fetch",
   initial: "initial",
