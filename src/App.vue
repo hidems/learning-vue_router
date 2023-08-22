@@ -6,7 +6,8 @@
       <router-link to="/book">Book List</router-link> |
       <router-link to="/item/1">Item List</router-link> |
       <router-link to="/emit">Emit Practice</router-link> |
-      <router-link to="/user/profile">User</router-link>
+      <router-link to="/user/profile">User</router-link> |
+      <router-link to="/xstate">Xstate</router-link>
     </nav>
     <div class="border-blue">
       <transition name="fade" mode="out-in">
